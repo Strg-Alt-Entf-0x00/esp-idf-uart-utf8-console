@@ -1,0 +1,28 @@
+menu "UART UTF-8 Console Configuration"
+
+    config UART_UTF8_CONSOLE_MAX_LINE_LEN
+        int "Maximum line length (bytes)"
+        default 512
+        help
+            Maximum length of a console input line including multi-byte UTF-8 sequences.
+
+    config UART_UTF8_CONSOLE_HISTORY_SIZE
+        int "Command history entries"
+        default 8
+        help
+            Number of previous commands retained in cyclic history buffer.
+
+    config UART_UTF8_CONSOLE_STACK_SIZE
+        int "Console task stack size (bytes)"
+        default 8192
+        help
+            FreeRTOS stack allocated for the interactive console task.
+
+    config UART_UTF8_CONSOLE_TASK_PRIORITY
+        int "Console task priority"
+        default 5
+        help
+            FreeRTOS priority of the console listening task.
+
+endmenu
+

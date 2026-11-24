@@ -1,0 +1,8 @@
+version: "1.0.0"
+description: "Interactive non-blocking UART console with UTF-8 multi-byte support, VT100 navigation, and history for ESP-IDF"
+url: "https://github.com/Strg-Alt-Entf-0x00/esp-idf-uart-utf8-console"
+repository: "https://github.com/Strg-Alt-Entf-0x00/esp-idf-uart-utf8-console.git"
+license: "PolyForm-Noncommercial-1.0.0"
+
+dependencies:
+  idf: ">=5.0.0"
